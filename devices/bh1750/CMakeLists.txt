@@ -1,2 +1,4 @@
-idf_component_register(SRCS "bh1750.c"
-                    INCLUDE_DIRS ".")
+set(COMPONENT_NAME "bh1750")
+set(COMPONENT_SRCS "bh1750.c")
+set(COMPONENT_ADD_INCLUDEDIRS ".")
+register_component()
