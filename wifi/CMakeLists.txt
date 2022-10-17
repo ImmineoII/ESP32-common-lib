@@ -1,5 +1,4 @@
-set(COMPONENT_NAME "wifi_sta")
-set(COMPONENT_SRCS "wifi_sta.c")
-set(COMPONENT_ADD_INCLUDEDIRS ".")
-set(COMPONENT_REQUIRES "nvs_flash esp_wifi")
-register_component()
+idf_component_register( NAME "wifi_sta"
+                        SRCS "wifi_sta.c"
+                        INCLUDE_DIRS "."
+                        REQUIRES "nvs_flash esp_wifi")
